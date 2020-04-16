@@ -1,0 +1,14 @@
+@font-face{
+font-family: bahnschrift; 
+     src: url("/fonts/BAHNSCHRIFT.eot");
+}
+body{
+	background-color: black;
+	font-family: bahnschrift;
+}
+#container{
+	width: 380px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
