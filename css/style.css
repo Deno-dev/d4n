@@ -2,13 +2,351 @@
 font-family: bahnschrift; 
      src: url("/fonts/BAHNSCHRIFT.eot");
 }
-body{
+body {
 	background-color: black;
 	font-family: bahnschrift;
+    padding: 0;
+    margin: 0;
+    color: white;
 }
-#container{
-	width: 380px;
+ 
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.form-box {
+	border-radius: 9px;
+    width: 300px;
+    padding: 2px;
+    background: #fff;
+    font-family: bahnschrift;
+    text-align: center;
+    box-sizing: border-box;
+    border-top: 10px solid #003471
+}
+.form-box .form-input {
+    border: none;
+    background: #eee;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 10px
+}
+ 
+.form-box .form-btn {
+    border: none;
+    background: #003471;
+    width: 100%;
+    height: 50px;
+    font-size: large;
+    color: #fff;
+    margin-bottom: 10px
+}
+footer{
+	margin-top: 290px;
+	position: absolute;
+}
+.navbar ul li #logo{
+	position: absolute;
+	top: 5px;
+	left: 30px;
+}
+.navbar{
+	display: flex;
+	background-color: #003471;
+	position: absolute;
+	margin: 0px auto;
+	height: 90px;
+	width: 100%;
+	flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.navbar ul{
+	flex-direction: row-reverse;
+	display: flex;
+	align-items: center;
+	list-style: none;	
+	margin-right: 40px;
+}
+/*.navbar ul li{
+	margin-left: 20px;
+	float: right;
+}*/
+.cont-box {
+	border-radius: 9px;
+    width: 95%;
+    height: 90%;
+    background: #fff;
+    font-family: bahnschrift;
+    /*text-align: center;*/
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#painel{
+	text-align: center;
+	border: 2px solid black;
+	border-top: 25px solid #003471; 	
+	flex-direction: column;
+	width: 30%;
+	margin-top: 70px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	border-radius: 9px;
+    font-family: bahnschrift;
+	background-color: white;
+	display: flex;
+	color: black;
+}
+#oss{
+	border: 2px solid black;
+	border-top: 25px solid #003471; 	
+	flex-direction: column;
+	width: 63%;
+	margin-top: 70px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	border-radius: 9px;
+    font-family: bahnschrift;
+	background-color: white;
+	display: flex;
+	color: black;	
+}
+.foo{
+	margin-top: 290px;
+	color: white;
+}
+.pesquisa{
+	margin: 7px;
+	width: 90%; 
+	height: 23px;
+	border: 1px solid black;
+	border-radius: 7px;
+	padding: 5px;
+}
+.pesquisab{
+	margin-right: 12px;
+	float: right;
+	margin-top: 10px;
+}
+#cadastroform{
+	border: 2px solid black;
+	border-top: 25px solid #003471; 	
+	flex-direction: column;
+	width: 63%;
+	margin-top: 70px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	border-radius: 9px;
+    font-family: bahnschrift;
+	background-color: white;
+	display: flex;
+	color: black;	
+	text-align: left;
+}
+#chatbox{
+	/*text-align: center;*/
+	border: 2px solid black;
+	border-top: 25px solid #003471; 	
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 30%;
+	margin-top: 70px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	border-radius: 9px;
+    font-family: bahnschrift;
+	background-color: white;
+	display: flex;
+	color: black;
+}
+#chatbox form{
+	padding: 15px;
+}
+.form{
+	margin: 0px;
+	padding: 20px;
+}
+.form input{
+	padding: 5px;
+	border-radius: 8px;
+	border: 1px solid black;
+}	
+.doubleput{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 17px;
+	width: 95%;
+	padding: 0	px;
+	display: flex;
+	justify-content: space-between;
+	align-items: left
+}
+.navbar li ul{
+	margin-left: 0px;
+	border-radius: 8px;
+	position:absolute; 
+	top:60px; 
+	right:0;
+	background-color:#fff; 
+	display:none;
+}   
+.navbar li:hover ul, .menu li.over ul{
+	display:block;
+}
+.navbar li ul li{
+	margin-left: 0px;
+	padding-top: 20px;
+	/*border:1px solid #c0c0c0; */
+	display:block; 
+	width:150px;
+	border-radius: 8px;
+	height: 40px;
+}
+.navbar li ul li:hover{
+    border-right: 6px solid #003471;
+}
+.atendimento{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	background-color: white;
+	padding: 20px;
+	margin: 20px;
+	border: 1px solid black;
+	border-radius: 7px;
+	/*height: 70px;*/
+}
+#resultado{
+	height: 90%;
+	overflow-y: auto;
+}
+.btchat{
+	background-color: #003471;
+	color: white;
+	border: 1px solid black;
+	border-radius: 8px;
+	width: 80px;
+	height: 30px;
+	font-family: bahnschrift;
+	margin-top: 200px;
+}
+.formservico{
+	height: 25px;
+	margin-bottom: 20px;
+	border: 1px solid black;
+	border-radius: 7px;
+	width: 80%;
+}
+.btnp{
+	font-family: bahnschrift;
+	border: none;
+    background: #003471;
+    width: 100%;
+    height: 50px;
+    font-size: large;
+    color: #fff;
+    margin-bottom: 10px;
+    /*
+	background-color: #003471;
+	color: white;
+	border: 1px solid black;
+	border-radius: 8px;
+	width: 80px;
+	height: 30px;
+	font-family: bahnschrift;*/
+}
+.crud{
+	position: relative;
+	top: 0px;
+	right: 0px;
+	font-family: bahnschrift;
+	height: 4px;
+	width: 10px;
+	background-color: grey;
+}
+.popup{
+	top: 20%;
+	border: 2px solid black;
+	position: fixed;
+	border-radius: 8px;
+	border-top: 10px solid #003471;
+	width: 300px;
+	display: none;
+	padding: 2px;
+	background-color: white;
+	-webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow:9px 7px 5px rgba(50, 50, 50, 0.77);
+    box-shadow:9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+.popup .form-input {
+    border: none;
+    background: #eee;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 10px
+}
+ 
+.popup .form-btn {
+    border: none;
+    background: #003471;
+    width: 100%;
+    height: 50px;
+    font-size: large;
+    color: #fff;
+    margin-bottom: 10px
+}
+.alinhacrud{
+	display: flex;
+	flex-direction: row;
+}
+.popup2{
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 2px solid black;
+	position: absolute;
+	border-radius: 8px;
+	border-top: 10px solid #003471;
+	width: 300px;
+	display: none;
+	padding: 2px;
+	background-color: white;
+	-webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow:9px 7px 5px rgba(50, 50, 50, 0.77);
+    box-shadow:9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+.chatcont{
+	text-align: left;
+	border: 2px solid black;
+	border-top: 25px solid #003471; 	
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 96%;
+	margin-top: 70px;
+	margin-left: 30px;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+	border-radius: 9px;
+    font-family: bahnschrift;
+	background-color: white;
+	display: flex;
+	color: black;
+}
+#chat{
+	height: 95%;
+	overflow-y: auto;
+}
+#chat2{
+	height: 95%;
+	overflow-y: auto;
 }
